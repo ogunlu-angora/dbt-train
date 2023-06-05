@@ -3,8 +3,8 @@ SELECT
   mo.product_id,
   --p.product_category,
   mo.total_orders,
-  mo.total_sales,
-  p.product_price
+  mo.total_sales
+  --p.product_price
 FROM
   {{ ref('monthly_orders') }} mo
 JOIN
